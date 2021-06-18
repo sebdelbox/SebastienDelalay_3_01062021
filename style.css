@@ -1,0 +1,162 @@
+/* color 1st : #9356DC (violet) */
+/* color 2nd : #FF79DA (fushia) */
+/* color 3rd : #99E2D0 (cyan) */
+@font-face { 
+    font-family: "Shrikhand-Regular"; src: url("Polices/Shrikhand-Regular.ttf") ;
+}
+@font-face { 
+    font-family: "Roboto"; src: url("Polices/Roboto-Medium.ttf") ;
+}
+body { 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #000000;
+}
+h1, h2 { 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin: 40px;
+}
+h3 { 
+    font-size: 1em;
+    margin: 0px;
+}
+h4 {
+    margin-top: 0px;
+}
+p {
+    margin-top: 0px;
+}
+
+a { color: black; text-decoration: none; }
+a:hover { text-decoration: underline; }
+i { margin: 0px 10px 0px 0px; } /*icones*/
+
+.logo {
+    font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+header {
+    background-color: silver;
+    padding: 0px;
+    text-align: center;
+}
+.localisation {
+    background-color: grey;
+    padding: 40px;
+}
+.btn__explorer {
+    background-color: #FF79DA;
+    color: white;
+    width: max-content;
+    padding: 20px;
+    margin: 100px;
+    text-align: center;
+    border-radius: 40px;
+}
+.nav__fonction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media all and (max-width: 1024px) {
+    .nav__fonction {
+        flex-direction: column;
+    }
+}
+.btn__fonction {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: silver;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 4px 4px 10px black;
+}
+@media all and (max-width: 1024px) {
+    .btn__fonction {
+        width: 800px;
+        font-size: 2.5em; /*pourquoi c'est si petit par défaut*/
+        padding: 40px 20px 40px 20px;
+        margin-left: 60px;
+    }
+}
+.numero {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%;
+    margin: 0px;
+    background-color: #9356DC;
+    text-align: center;
+    position: relative;
+    left: -20px;
+}
+@media all and (max-width: 1024px) {
+    .numero {
+        width: 50px;
+        height: 50px;
+        padding: 4px;
+        border-radius: 50%;
+        margin: 0px;
+        position: relative;
+        left: -50px;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.nav__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media all and (max-width: 1024px) {
+    .nav__footer {
+        flex-direction: column;
+        font-size: 2.5em; /*pourquoi c'est si petit par défaut*/
+    }
+}
+.lnk__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+footer a {
+    color: white;
+}
+.logo-footer {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media all and (max-width: 1024px) {
+    .logo-footer {
+        text-align: left;
+        margin: 0px 0px 40px 20px;
+    }
+}
+.i__footer {
+    
+}
+@media all and (max-width: 1024px) {
+    .i__footer {
+        width: 60px;
+    }
+}
+/*RESPONSIVE*/
+@media all and (max-width: 1024px) {
+    header {
+        text-align: center;
+    }
+}
