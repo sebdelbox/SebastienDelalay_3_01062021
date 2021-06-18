@@ -17,8 +17,14 @@ body {
 }
 h1, h2 { 
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
-    margin: 40px;
+    font-size: 1.5em;
+    margin: 20px;
+}
+@media all and (max-width: 1024px) {
+    h1, h2 { 
+        font-size: 2.5em;
+        margin: 40px;
+    }
 }
 h3 { 
     font-size: 1em;
@@ -38,9 +44,12 @@ i { margin: 0px 10px 0px 0px; } /*icones*/
 .logo {
     font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
     font-size: 4.5em;
-    text-align: center;
 }
-
+@media all and (max-width: 1024px) {
+    .logo {
+        text-align: center;
+    }
+}
 header {
     background-color: silver;
     padding: 0px;
@@ -48,21 +57,34 @@ header {
 }
 .localisation {
     background-color: grey;
-    padding: 40px;
+    padding: 10px;
+}
+@media all and (max-width: 1024px) {
+    .localisation {
+        padding: 40px;
+    }
 }
 .btn__explorer {
-    background-color: #FF79DA;
+    /*background-color: #FF79DA;*/
+    background-image:linear-gradient(to bottom,#FF79DA,#9356DC);
     color: white;
-    width: max-content;
+    /*width: max-content;*/
     padding: 20px;
-    margin: 100px;
-    text-align: center;
+    margin: 20px auto 40px auto;
+    /*text-align: center;*/
+    display: inline-block;
     border-radius: 40px;
+    box-shadow: 2px 2px 2px black;
+}
+@media all and (max-width: 1024px) {
+    .btn__explorer {
+        font-size: 2.5em;
+    }
 }
 .nav__fonction {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 @media all and (max-width: 1024px) {
     .nav__fonction {
@@ -70,14 +92,16 @@ header {
     }
 }
 .btn__fonction {
-    width: 300px;
+    width: 250px;
+    line-height: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: silver;
-    border-radius: 40px;
     margin: 20px;
-    padding: 20px 10px 20px 10px;
+    /*padding: 10px 10px 0px 10px;*/
+    vertical-align: middle;
+    border-radius: 40px;
     box-shadow: 4px 4px 10px black;
 }
 @media all and (max-width: 1024px) {
@@ -90,23 +114,23 @@ header {
 }
 .numero {
     width: 20px;
-    height: 20px;
-    padding: 2px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4px;
+    height: min-content;
     border-radius: 50%;
     margin: 0px;
     background-color: #9356DC;
-    text-align: center;
     position: relative;
     left: -20px;
+
 }
 @media all and (max-width: 1024px) {
     .numero {
         width: 50px;
-        height: 50px;
-        padding: 4px;
-        border-radius: 50%;
-        margin: 0px;
-        position: relative;
+        line-height: 50px;
         left: -50px;
     }
 }
