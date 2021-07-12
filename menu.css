@@ -1,0 +1,88 @@
+section {
+    background-color: lightgray;
+    padding-bottom: 40px;
+}
+header {
+    background-color: white;
+    padding: 20px;
+}
+h1 {
+    font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+    font-size: 4.5em;
+    margin-bottom:0px;
+}
+h2 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+h3 {
+    font-size: 2em;
+}
+@media all and (max-width: 1024px) {
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+}
+
+.btn__retour {
+    position:absolute;
+    top:40px;
+    font-size:2em;
+}
+@media all and (max-width: 1024px) {
+    .btn__retour {
+        font-size:2.5em;
+    }
+}
+.img__restaurant {
+    height:600px;
+    background-size: 100%;
+    text-align: left;
+    
+}
+.txt__restaurant {
+    margin: 0px;
+    width:100%;
+    position: relative;
+    top:-60px;
+    background-color: lightgray;
+    border-radius: 50px 50px 0% 0%;
+}
+.favori {
+    font-size: 4em;
+    padding-right:20px;
+}
+.sousligne {
+    border-top: 3px solid turquoise; 
+    line-height: 20px; 
+    height:20px;
+    margin-left: 20px;
+    width:80px;
+}
+@media all and (max-width: 1024px) {
+    .sousligne {
+        margin-left: 40px;
+        width:150px;
+    }
+}
+.menu {
+    background-color:white;
+    border-radius: 25px ; 
+    box-shadow: 2px 2px 2px black;
+    padding:20px;
+    margin:20px;
+}
+.txt__menu {
+    display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;
+}
+.tarif {
+    font-size: 2.5em;
+    font-weight: bold   ;
+    /*background-color: red;*/
+    display: flex;
+    align-items: bottom;
+}
