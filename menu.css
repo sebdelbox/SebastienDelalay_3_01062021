@@ -1,3 +1,6 @@
+body {
+    background-color: lightgray;
+}
 section {
     background-color: lightgray;   
     padding-bottom: 40px;
@@ -40,7 +43,6 @@ p {
         font-size: 4.5em;
         text-shadow: 0px;
         color:black;
-        font-weight: bold;
     }
     h2 {
         font-size: 3em;
