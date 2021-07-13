@@ -54,14 +54,14 @@ a:hover { text-decoration: none; }
 i { /*icones fontawesome*/
     margin: 0px 10px 0px 0px; 
 } 
-
 .logo {
     font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
-    font-size: 4.5em;
+    font-size: 4em;
 }
 @media all and (max-width: 1024px) {
     .logo {
         text-align: center;
+        font-size: 4.5em;
     }
 }
 header {
@@ -94,6 +94,9 @@ header {
         font-size: 2.5em;
     }
 }
+.btn__violet:hover {
+    color: #99E2D0;
+}
 .nav__fonction {
     display: flex;
     flex-direction: row;
@@ -112,8 +115,6 @@ header {
     flex-wrap: nowrap;
     background-color: silver;
     margin: 20px;
-    /*padding: 10px 10px 0px 10px;*/
-    /*vertical-align: middle;*/
     align-items: center;
     border-radius: 40px;
     box-shadow: 4px 4px 10px black;
@@ -121,10 +122,14 @@ header {
 @media all and (max-width: 1024px) {
     .btn__fonction {
         width: 800px;
-        font-size: 2.5em; /*pourquoi c'est si petit par défaut*/
+        font-size: 2.5em;
         padding: 40px 20px 40px 20px;
         margin-left: 60px;
     }
+}
+.btn__fonction:hover {
+    color: #99E2D0;
+    background-image:linear-gradient(to bottom,#FF79DA,#9356DC)
 }
 .numero {
     width: 20px;
@@ -139,7 +144,6 @@ header {
     background-color: #9356DC;
     position: relative;
     left: -20px;
-
 }
 @media all and (max-width: 1024px) {
     .numero {
@@ -246,11 +250,8 @@ header {
 @media all and (max-width: 1024px) {
     .nouveau {
         right: 50px;
-
-
         padding: 20px;
         font-size: 2.5em;
-        
     }
 }
 footer {
@@ -277,6 +278,9 @@ footer {
 }
 footer a {
     color: white;
+}
+footer a:hover {
+    color: #99E2D0;
 }
 .logo-footer {
     font-size: 1.8em;
