@@ -131,7 +131,7 @@ p {
 .tarif {
     font-size: 1.5em;
     font-weight: bold   ;
-    /*background-color: red;*/
+    margin-left: 20px;
     display: flex;
     align-items: bottom;
 }
