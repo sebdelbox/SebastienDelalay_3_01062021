@@ -88,6 +88,8 @@ header {
     display: inline-block;
     border-radius: 40px;
     box-shadow: 2px 2px 2px black;
+    transform: scale(1);
+    transition: transform 400ms;
 }
 @media all and (max-width: 1024px) {
     .btn__violet {
@@ -96,6 +98,7 @@ header {
 }
 .btn__violet:hover {
     color: #99E2D0;
+    transform: scale(1.15);
 }
 .nav__fonction {
     display: flex;
@@ -118,6 +121,8 @@ header {
     align-items: center;
     border-radius: 40px;
     box-shadow: 4px 4px 10px black;
+    transform: scale(1);
+    transition: transform 400ms;
 }
 @media all and (max-width: 1024px) {
     .btn__fonction {
@@ -129,7 +134,8 @@ header {
 }
 .btn__fonction:hover {
     color: #99E2D0;
-    background-image:linear-gradient(to bottom,#FF79DA,#9356DC)
+    background-image:linear-gradient(to bottom,#FF79DA,#9356DC);
+    transform: scale(1.05);
 }
 .numero {
     width: 20px;
