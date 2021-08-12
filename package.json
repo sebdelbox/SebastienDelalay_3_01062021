@@ -1,0 +1,20 @@
+{
+  "name": "projet03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/:./public/css/ --style compressed", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebdelbox/SebastienDelalay_3_01062021.git"
+  },
+  "author": "SebDelBox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebdelbox/SebastienDelalay_3_01062021/issues"
+  },
+  "homepage": "https://github.com/sebdelbox/SebastienDelalay_3_01062021#readme"
+}

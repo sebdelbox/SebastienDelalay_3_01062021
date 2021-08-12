@@ -1,0 +1,346 @@
+/* color 1st : $color01 (violet) */
+/* color 2nd : #FF79DA (fushia) */
+/* color 3rd : #99E2D0 (cyan) */
+@font-face { 
+    font-family: "Shrikhand-Regular"; src: url("../fonts/Shrikhand-Regular.ttf") ;
+}
+@font-face { 
+    font-family: "Roboto"; src: url("../fonts/Roboto-Medium.ttf") ;
+}
+body { 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #000000;
+}
+h1, h2 { 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin: 20px;
+    font-weight: bold;
+}
+@media all and (max-width: 1024px) {
+    h1, h2 { 
+        font-size: 3.5em;
+        margin: 40px;
+    }
+}
+h3 { 
+    font-size: 1.5em;
+    margin: 0px;
+    font-weight: bold;
+}
+@media all and (max-width: 1024px) {
+    h3 { 
+        font-size: 3em;
+    }
+}
+h4 {
+    margin-top: 0px;
+}
+p {
+    font-size: 1.4em;
+    margin-top: 0px;
+}
+@media all and (max-width: 1024px) {
+    p {
+        font-size: 2em;
+    }
+}
+a { color: black; text-decoration: none; }
+a:hover { text-decoration: none; }
+i { /*icones fontawesome*/
+    margin: 0px 10px 0px 0px; 
+} 
+.logo {
+    font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+@media all and (max-width: 1024px) {
+    .logo {
+        text-align: center;
+        font-size: 4.5em;
+    }
+}
+header {
+    background-color: silver;
+    padding: 0px;
+    text-align: center;
+}
+.localisation {
+    background-color: grey;
+    padding: 10px;
+}
+@media all and (max-width: 1024px) {
+    .localisation {
+        padding: 40px;
+        font-size: 2em;
+    }
+}
+.btn__violet {
+    background-image:linear-gradient(to bottom,#FF79DA,$color01);
+    color: white;
+    width: max-content;
+    padding: 20px;
+    margin: 20px auto 40px auto;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px black;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+@media all and (max-width: 1024px) {
+    .btn__violet {
+        font-size: 2.5em;
+    }
+}
+.btn__violet:hover {
+    color: #99E2D0;
+    transform: scale(1.15);
+}
+.nav__fonction {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+@media all and (max-width: 1024px) {
+    .nav__fonction {
+        flex-direction: column;
+    }
+}
+.btn__fonction {
+    width: 250px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: silver;
+    margin: 20px;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 4px 4px 10px black;
+    transform: scale(1);
+    transition: all 400ms;
+}
+@media all and (max-width: 1024px) {
+    .btn__fonction {
+        width: 800px;
+        font-size: 2.5em;
+        padding: 40px 20px 40px 20px;
+        margin-left: 60px;
+    }
+}
+.btn__fonction:hover {
+    color: #99E2D0;
+    background-image:linear-gradient(to bottom,#FF79DA,$color01);
+    transform: scale(1.05);
+}
+.numero {
+    width: 20px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4px;
+    height: max-content;
+    border-radius: 50%;
+    margin: 0px;
+    background-color: $color01;
+    position: relative;
+    left: -20px;
+}
+@media all and (max-width: 1024px) {
+    .numero {
+        width: 50px;
+        line-height: 50px;
+        left: -50px;
+    }
+}
+.lst__restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media all and (max-width: 1024px) {
+    .lst__restaurants {
+        flex-direction: column;
+    }
+}
+.restaurant {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px silver;
+    margin: 0px 10px 40px 10px;
+    border: 2px;
+    width: 25%;
+    height: max-content;
+}
+@media all and (max-width: 1024px) {
+    .restaurant {
+        width: 98%;
+    }
+}
+.img__restaurant {
+    height: 200px;
+    width: 100%;
+    background-size: 100%;
+    text-align: right;
+    border-radius: 50px 50px 0px 0px;
+}
+@media all and (max-width: 1024px) {
+    .img__restaurant {
+        height: 600px;
+        
+    }
+}
+#resto-01 {
+    background-image:url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+}
+#resto-02 {
+    background-image:url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+    background-position-y: -90px;
+}
+#resto-03 {
+    background-image:url('../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+}
+#resto-04 {
+    background-image:url('../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+}
+@media all and (max-width: 1024px) {
+    #resto-01 {
+        background-position-y: -60px;
+    }
+    #resto-02 {
+        background-position-y: -440px;
+    }
+    #resto-03 {
+        background-position-y: -60px;
+    }
+    #resto-04 {
+        background-position-y: -80px;
+    }
+}
+.txt__restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px;
+}
+.fav__restaurant {
+    text-align: right; 
+    vertical-align: middle;
+}
+.favori {
+    font-size: 1.5em;
+}
+@media all and (max-width: 1024px) {
+    .favori {
+        font-size: 3em;
+        line-height:100px;
+    }
+}
+.nouveau {
+    position: absolute;
+    background-color: turquoise;
+    right: 10px;
+    top: 0;
+    margin-right:20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+@media all and (max-width: 1024px) {
+    .nouveau {
+        right: 50px;
+        padding: 20px;
+        font-size: 2.5em;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.nav__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media all and (max-width: 1024px) {
+    .nav__footer {
+        flex-direction: column;
+        font-size: 2.5em; /*pourquoi c'est si petit par défaut*/
+    }
+}
+.lnk__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #99E2D0;
+}
+.logo-footer {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media all and (max-width: 1024px) {
+    .logo-footer {
+        font-size: 4.5em;
+        text-align: left;
+        margin: 0px 0px 40px 20px;
+    }
+}
+.i__footer {
+    
+}
+@media all and (max-width: 1024px) {
+    .i__footer {
+        width: 60px;
+    }
+}
+.logo-intro {
+    font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    transform: rotate(0turn);
+}
+.logo-intro:hover {
+    transform: rotate(2turn);
+    transition: all 500ms ease-in-out;
+}
+
+@media all and (max-width: 1024px) {
+    .logo-intro {
+        text-align: center;
+        font-size: 4.5em;
+    }
+}
+.intro {
+    display: flex;
+    position: absolute;
+    top:0px; left:0px;
+    width:100%; height:100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    transform :scale(1);
+    transition-property:all;
+    transition-duration: 3000ms;
+    transform-origin: top;
+}
+.intro:active   {
+    transform: scale(0);
+}
+/*RESPONSIVE*/
+@media all and (max-width: 1024px) {
+
+}

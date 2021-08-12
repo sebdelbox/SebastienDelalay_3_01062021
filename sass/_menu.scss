@@ -1,3 +1,4 @@
+
 section {
     background-color: lightgray;   
     padding-bottom: 40px;
@@ -16,10 +17,10 @@ header {
     padding: 20px;
 }
 h1 {
-    font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+    font-family: $font02;
     font-size: 3em;
     margin-bottom:0px;
-    text-shadow: 5px 5px 2px #99E2D0;
+    text-shadow: 5px 5px 2px $color03;
     color: grey;
     font-weight: normal;
 }
@@ -31,9 +32,11 @@ h2 {
 }
 h3 {
     font-size: 1.2em;
+    text-overflow: ellipsis;
 }
 p {
     font-size: 1em;
+    text-overflow: ellipsis;
 }
 @media all and (max-width: 1024px) {
     h1 {
@@ -83,6 +86,9 @@ p {
 .favori {
     font-size: 2.5em;
     padding-right:20px;
+    &:hover {
+        color: $color01;
+    }
 }
 @media all and (max-width: 1024px) {
     .favori {
@@ -116,26 +122,50 @@ p {
     background-color:white;
     border-radius: 25px ; 
     box-shadow: 2px 2px 2px black;
-    padding:20px;
+    padding:0px;
     margin:20px;
+    &:hover {
+        /*modifier la taille de la class valid*/
+    }
 }
+
 .txt__menu {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    height: 100%;
+    padding:0px;
+    border-radius: 25px ; 
+}
+.lib__menu {
+    padding: 10px;
+    width: 100%;
 }
 .tarif {
     font-size: 1.5em;
     font-weight: bold   ;
     margin-left: 20px;
     display: flex;
-    align-items: bottom;
+    align-items: center;
+    text-align: right;
+    padding-right: 10px; 
 }
 @media all and (max-width: 1024px) {
     .tarif {
         font-size: 2.5em;
     }
+}
+.valid {
+    background-color:turquoise;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 0px 25px 25px 0px ; 
+    width: 80px;
 }
 footer {
     position: relative;

@@ -1,22 +1,14 @@
-/* color 1st : #9356DC (violet) */
-/* color 2nd : #FF79DA (fushia) */
-/* color 3rd : #99E2D0 (cyan) */
-@font-face { 
-    font-family: "Shrikhand-Regular"; src: url("Polices/Shrikhand-Regular.ttf") ;
-}
-@font-face { 
-    font-family: "Roboto"; src: url("Polices/Roboto-Medium.ttf") ;
-}
+
 body { 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: $font01;
     font-size: 1em;
     margin: 0px;
     max-width: 1280px;
     margin: 0 auto;
-    color: #000000;
+    color: $color00;
 }
 h1, h2 { 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: $font01;
     font-size: 2em;
     margin: 20px;
     font-weight: bold;
@@ -49,13 +41,14 @@ p {
         font-size: 2em;
     }
 }
-a { color: black; text-decoration: none; }
-a:hover { text-decoration: none; }
+a { color: black; text-decoration: none; 
+    &:hover { text-decoration: none; }
+}
 i { /*icones fontawesome*/
     margin: 0px 10px 0px 0px; 
 } 
 .logo {
-    font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+    font-family: $font02;
     font-size: 4em;
 }
 @media all and (max-width: 1024px) {
@@ -80,7 +73,7 @@ header {
     }
 }
 .btn__violet {
-    background-image:linear-gradient(to bottom,#FF79DA,#9356DC);
+    background-image:linear-gradient(to bottom,$color02,$color01);
     color: white;
     width: max-content;
     padding: 20px;
@@ -90,15 +83,15 @@ header {
     box-shadow: 2px 2px 2px black;
     transform: scale(1);
     transition: transform 400ms;
+    &:hover {
+        color: $color03;
+        transform: scale(1.15);
+    }
 }
 @media all and (max-width: 1024px) {
     .btn__violet {
         font-size: 2.5em;
     }
-}
-.btn__violet:hover {
-    color: #99E2D0;
-    transform: scale(1.15);
 }
 .nav__fonction {
     display: flex;
@@ -122,7 +115,12 @@ header {
     border-radius: 40px;
     box-shadow: 4px 4px 10px black;
     transform: scale(1);
-    transition: transform 400ms;
+    transition: all 400ms;
+    &:hover {
+        color: $color03;
+        background-image:linear-gradient(to bottom,$color02,$color01);
+        transform: scale(1.05);
+    }
 }
 @media all and (max-width: 1024px) {
     .btn__fonction {
@@ -131,11 +129,6 @@ header {
         padding: 40px 20px 40px 20px;
         margin-left: 60px;
     }
-}
-.btn__fonction:hover {
-    color: #99E2D0;
-    background-image:linear-gradient(to bottom,#FF79DA,#9356DC);
-    transform: scale(1.05);
 }
 .numero {
     width: 20px;
@@ -147,7 +140,7 @@ header {
     height: max-content;
     border-radius: 50%;
     margin: 0px;
-    background-color: #9356DC;
+    background-color: $color01;
     position: relative;
     left: -20px;
 }
@@ -198,17 +191,17 @@ header {
     }
 }
 #resto-01 {
-    background-image:url('Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+    background-image:url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
 }
 #resto-02 {
-    background-image:url('Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+    background-image:url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
     background-position-y: -90px;
 }
 #resto-03 {
-    background-image:url('Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+    background-image:url('../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
 }
 #resto-04 {
-    background-image:url('Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+    background-image:url('../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
 }
 @media all and (max-width: 1024px) {
     #resto-01 {
@@ -237,6 +230,9 @@ header {
 }
 .favori {
     font-size: 1.5em;
+    &:hover {
+        color: $color01;
+    }
 }
 @media all and (max-width: 1024px) {
     .favori {
@@ -273,7 +269,7 @@ footer {
 @media all and (max-width: 1024px) {
     .nav__footer {
         flex-direction: column;
-        font-size: 2.5em; /*pourquoi c'est si petit par défaut*/
+        font-size: 2.5em; 
     }
 }
 .lnk__footer {
@@ -284,10 +280,11 @@ footer {
 }
 footer a {
     color: white;
+    &:hover {
+        color: $color03;
+    }
 }
-footer a:hover {
-    color: #99E2D0;
-}
+
 .logo-footer {
     font-size: 1.8em;
     margin-bottom: 20px;
@@ -308,6 +305,7 @@ footer a:hover {
         width: 60px;
     }
 }
+
 /*RESPONSIVE*/
 @media all and (max-width: 1024px) {
 
